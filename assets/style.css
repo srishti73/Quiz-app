@@ -1,0 +1,120 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    min-height:100vh;
+    font-family:Verdana;
+    /* background-color:red; */
+}
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#218380;
+    padding:20px;
+}
+
+header p{
+    color:#fff;
+}
+header a:hover{
+    cursor:pointer;
+}
+
+main{
+    width:100%;
+}
+
+.container{
+    width:50%;
+    margin:7rem auto;
+    border:1px solid rgb(204, 201, 201);
+    padding:2.5rem 3rem;
+    border-radius:15px;
+    box-shadow:3px 5px 15px rgb(204, 201, 201);
+}
+.container h1{
+    margin:1.5rem 0;
+}
+.container p{
+    margin:1rem 0;
+}
+
+.btn{
+    padding:8px 15px;
+    background-color:#218380;
+    color:#fff;
+    outline:none;
+    border:none;
+    border-radius:5px;
+}
+.btn:hover{
+    cursor:pointer;
+}
+#question-container{
+    display:none;
+}
+
+#question-container .options{
+    background-color:#218380;
+    padding:10px;
+    color:#fff;
+    border-radius:5px;
+}
+#user-input{
+    display:none;
+}
+
+#user-name{
+    padding:5px;
+}
+
+#high-score{
+    display:none;
+}
+#line{
+    display:none;
+}
+
+#highScorelist{
+    list-style-type:none;
+}
+
+
+.high-score{
+    padding:10px;
+}
+
+/*responsiveness of the game */
+@media only screen and (max-width:900px){
+    .container{
+        padding:20px;
+        width:70%;
+    }
+    .container h2{
+        font-weight:400;
+        font-size:1.5rem;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        width:90%;
+        }
+    .container h1{
+        font-size:1.6rem;
+    }
+    .btn{
+        margin-top:1.5rem;
+        padding:14px 18px;
+    }
+    .container h2{
+        font-size:1rem;
+        font-weight:300;
+        
+    }
+
+}

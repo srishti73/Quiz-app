@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <header>
+        <p>
+        <a id=leaderboard>View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+        </i></a> 
+        </p>
+        <p>Time:<span id="time">00</span></p>
+
+    </header>
+    <main>
+        <div class="container" id="main">
+            <h1>Coding Quiz Challege</h1>
+            <p>Try to answer following code-related questions within the time limit</p>
+            <p>Keep in mind that incorrect answer can penalize your time/score for 10 seconds</p>
+   <button class="btn" id="start-btn">Start Quiz</button>
+        </div>
+        <div class="container" id="question-container">
+        <h2 id="question">Arrays in JavaScript can be used to store ______.</h2>
+       <p class="options one">1. numbers and strings</p>
+       <p class="options two">2. other arrays</p>
+       <p class="options three">3. booleans</p>
+       <p class="options four">4. all of the above</p>
+       <hr id="line">
+       <p><span id="status"></span></p>
+        </div>
+
+        <div class="container" id="user-input">
+            <h1>All done!!</h1>
+            <p>Your final score is <span id="score"></span></p>
+            <p>Enter initials : <input type="text" id="user-name"> <button class="btn submit">Submit</button>
+            </p>
+
+        </div>
+        <div class="container" id="high-score">
+            <h1>HighScores!</h1>
+            <ul id="highScorelist">
+
+            </ul>
+            <button class="btn back">Go back</button>
+            <button class="btn clear">Clear highscore</button>
+        </div>
+        
+    </main>
+    <script src="/assets/script.js"></script>
+</body>
+
+</html>
+
